@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TLU MamaPop - Nước ép tốt nhất Việt Nam</title>
+    <link rel="stylesheet" href="../asset/css/header.css" />
+    <link rel="stylesheet" href="../asset/css/banner.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_container">
+            <!-- Secondary Navigation -->
+            <div class="header__secondary-navigation">
+                <div class="header__secondary-navigation__left">
+                    <div class="header__logo">
+                        <img src="../asset/imgs/logos/logo1.png" alt="Logo" />
+                    </div>
+                    <button class="header__menu-toggle" onclick="toggleMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+    
+                <div class="header__secondary-navigation__center">
+                    <div class="header__search-bar">
+                        <input type="text" class="header__search-input" placeholder="Tìm sản phẩm..." />
+                        <button class="header__search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="header__secondary-navigation__right">
+                    <div class="header__icons">
+                        <a href="#" class="header__icon"><i class="fas fa-user"></i><span> Đăng nhập / Đăng Ký</span></a>
+                        <a href="#" class="header__icon"><i class="fas fa-shopping-cart"></i><span> Giỏ hàng</span></a>
+                        <a href="#" class="header__icon"><i class="fas fa-star"></i><span> Yêu thích</span></a>
+                    </div>
+                    <div class="header__hotline">
+                        <span class="header__hotline-number">0877.179.668</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- NAV chính dạng off-canvas -->
+            <div class="header__main-navigation" id="mainNav">
+                <!-- Nút đóng menu -->
+                <button class="header__menu-close" onclick="toggleMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+            
+                <!-- Danh sách điều hướng -->
+                <ul class="header__nav-list">            
+                    <li class="header__nav-item"><a href="#">TRANG CHỦ</a></li>
+                    <li class="header__nav-item"><a href="#">GIỚI THIỆU</a></li>
+                    <li class="header__nav-item"><a href="#">SẢN PHẨM</a></li>
+                    <li class="header__nav-item"><a href="#">TIN TỨC</a></li>
+                    <li class="header__nav-item"><a href="#">ĐĂNG KÝ ĐỐI TÁC</a></li>
+                    <li class="header__nav-item nav-hidden"><a href="#">HỆ THỐNG CỬA HÀNG</a></li>
+                    <li class="header__nav-item"><a href="#">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+            
+            <!-- Overlay mờ khi mở menu -->
+            <div class="header__overlay" id="headerOverlay" onclick="toggleMenu()"></div>
+        </div>
+    </div>
+      
+
+    <div class="banner">
+        <div class="banner__background">
+            <img src="../asset/imgs/banners/bg1.jpg" alt="Banner Background" />
+        </div>
+    
+        <div class="banner__content">
+            <!-- Tiêu đề -->
+            <div class="banner__title">
+                <h2>CHỌN VỊ YÊU THÍCH</h2>
+            </div>
+    
+            <!-- Danh sách sản phẩm -->
+            <ul class="banner__product-list">
+                <li class="banner__product-item">
+                    <img src="../asset/imgs/products/product1.png" alt="Ổi hồng" />
+                    <div class="banner__product-info">
+                        <h3>ỔI HỒNG</h3>
+                        <p>PINK GUAVA</p>
+                        <span class="price">15.000đ</span>
+                    </div>
+                </li>
+                <li class="banner__product-item">
+                    <img src="../asset/imgs/products/product2.png" alt="Bưởi hồng" />
+                    <div class="banner__product-info">
+                        <h3>BƯỞI HỒNG</h3>
+                        <p>PINK GRAPEFRUIT</p>
+                        <span class="price">15.000đ</span>
+                    </div>
+                </li>
+                <!-- Add more products here -->
+            </ul>
+        </div>
+    </div>
+      
+
+
+    <script src="../asset/scripts/main.js"></script>
+</body>
+
+</html>
