@@ -40,9 +40,9 @@ let currentPage = 1;
 function getItemsPerPage() {
   const screenWidth = window.innerWidth;
 
-  if (screenWidth <= 420) return 2 * 4; // 2 cột * 4 hàng
-  else if (screenWidth <= 600) return 3 * 4;
-  else if (screenWidth <= 1000) return 4 * 4;
+  if (screenWidth <= 420) return 2 * 3;
+  else if (screenWidth <= 600) return 3 * 3;
+  else if (screenWidth <= 1000) return 4 * 3;
   else return 5 * 4; // mặc định
 }
 

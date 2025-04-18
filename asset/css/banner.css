@@ -30,7 +30,6 @@
 /* ========== TIÊU ĐỀ ========== */
 .banner__title {
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .banner__title h2 {
@@ -40,11 +39,39 @@
   position: relative;
 }
 
-.banner__title h2::after {
-  content: "❤️";
-  font-size: 20px;
-  margin-left: 10px;
+.section-heading {
+  font-size: 34px;
+  color: #02215b;
+  font-family: 'Linotte', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
 }
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.section-divider .line {
+  width: 80px;
+  height: 2px;
+  background-color: #02215b;
+}
+
+
+
+.banner__icon {
+  width: 28px;
+  height: 28px;
+  fill: #ed7790;
+}
+
 
 /* ========== PRODUCT LIST ========== */
 .banner__product-list {
@@ -70,8 +97,6 @@
   height: 100%;
 }
 
-
-
 .banner__product-item img {
   width: 100%;
   max-width: 150px;
@@ -92,7 +117,6 @@
   text-align: center;
 }
 
-
 .banner__product-info h3 {
   font-size: 22px;
   color: #02215b;
@@ -105,7 +129,6 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
 
 .banner__product-info h3:hover,
 .banner__product-info p:hover,
@@ -135,7 +158,6 @@
   /* để tạo đồng bộ layout */
 }
 
-
 /* ========== RESPONSIVE GRID ========== */
 @media (max-width: 1200px) {
   .banner__product-list {
@@ -154,20 +176,18 @@
   .banner__background img {
     height: 200vh;
   }
-  .banner__content{
+
+  .banner__content {
     margin: 0 100px;
   }
 }
 
 @media (min-width: 800px) and (max-width: 1000px) {
-
   .banner__product-list {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 30px;
   }
 }
-
-
 
 @media (min-width: 600px) and (max-width: 800px) {
   .banner__title h2 {
@@ -180,7 +200,7 @@
 
   .banner__product-info p {
     font-size: 14px;
-  } 
+  }
 
   .banner__product-info .price {
     font-size: 18px;
@@ -193,6 +213,10 @@
   .banner__product-list {
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     gap: 30px;
+  }
+
+  .banner__content {
+    margin: 0 50px;
   }
 }
 
@@ -221,7 +245,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-  .banner__content{
+
+  .banner__content {
     margin: 0;
   }
 }
@@ -251,7 +276,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  .banner__content{
+
+  .banner__content {
     margin: 0;
   }
 }
