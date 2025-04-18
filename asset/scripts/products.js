@@ -62,11 +62,12 @@ function setupResponsivePagination(products) {
       const item = document.createElement("li");
       item.className = "banner__product-item";
       item.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" />
+      <img src="${product.image}" alt="${product.name}" />
         <div class="banner__product-info">
           <h3>${product.name}</h3>
           <p>${product.engName}</p>
           <span class="price">${product.price}</span>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
         </div>
       `;
       list.appendChild(item);

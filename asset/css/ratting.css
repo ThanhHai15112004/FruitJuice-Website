@@ -1,0 +1,102 @@
+/* Giao diện desktop mặc định */
+.ratting-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e43f75;
+    padding: 30px 100px;
+    color: #fff;
+    gap: 32px;
+    flex-wrap: nowrap;
+  }
+  
+  .ratting-selection__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1 1 auto;
+    min-width: 200px;
+  }
+  
+  .ratting-selection__icon {
+    width: 36px;
+    height: auto;
+    flex-shrink: 0;
+  }
+  
+  .ratting-selection__content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ratting-selection__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+  }
+  
+  .ratting-selection__desc {
+    font-size: 14px;
+    margin-top: 4px;
+    opacity: 0.9;
+    white-space: nowrap;
+  }
+  
+  /* Tablet: co lại chút nữa */
+  @media (max-width: 1024px) {
+    .ratting-selection {
+      padding: 20px 60px;
+      gap: 24px;
+    }
+  
+    .ratting-selection__icon {
+      width: 30px;
+    }
+  
+    .ratting-selection__title {
+      font-size: 16px;
+    }
+  
+    .ratting-selection__desc {
+      font-size: 12px;
+    }
+  
+    .ratting-selection__item {
+      gap: 16px;
+      min-width: 180px;
+    }
+  }
+  
+  /* Mobile lớn: vẫn cố hiển thị đủ 3 item */
+  @media (max-width: 800px) {
+    .ratting-selection {
+      padding: 16px 40px;
+      gap: 16px;
+    }
+  
+    .ratting-selection__icon {
+      width: 26px;
+    }
+  
+    .ratting-selection__title {
+      font-size: 14px;
+    }
+  
+    .ratting-selection__desc {
+      display: none; /* Ẩn mô tả nếu quá hẹp */
+    }
+  
+    .ratting-selection__item {
+      gap: 12px;
+      min-width: 140px;
+    }
+  }
+  
+  /* Nếu dưới 600px mà không còn không gian => ẩn luôn */
+  @media (max-width: 600px) {
+    .ratting-selection {
+      display: none;
+    }
+  }
+  
