@@ -52,18 +52,18 @@
                 <button class="header__menu-close" onclick="toggleMenu()">
                     <i class="fas fa-times"></i>
                 </button>
-            
+
                 <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="#">TRANG CHỦ</a></li>
-                    <li class="header__nav-item"><a href="#">GIỚI THIỆU</a></li>
-                    <li class="header__nav-item"><a href="#">SẢN PHẨM</a></li>
-                    <li class="header__nav-item"><a href="#">TIN TỨC</a></li>
-                    <li class="header__nav-item"><a href="#">ĐĂNG KÝ ĐỐI TÁC</a></li>
-                    <li class="header__nav-item"><a href="#">HỆ THỐNG CỬA HÀNG</a></li>
-                    <li class="header__nav-item"><a href="#">LIÊN HỆ</a></li>
+                    <li class="header__nav-item"><a href="../index.html">TRANG CHỦ</a></li>
+                    <li class="header__nav-item"><a href="../index.html">GIỚI THIỆU</a></li>
+                    <li class="header__nav-item"><a href="../index.html">SẢN PHẨM</a></li>
+                    <li class="header__nav-item"><a href="../index.html">TIN TỨC</a></li>
+                    <li class="header__nav-item"><a href="../index.html">ĐĂNG KÝ ĐỐI TÁC</a></li>
+                    <li class="header__nav-item"><a href="../index.html">HỆ THỐNG CỬA HÀNG</a></li>
+                    <li class="header__nav-item"><a href="../index.html">LIÊN HỆ</a></li>
                 </ul>
             </div>
-            
+
         </div>
         <div class="header__overlay" id="headerOverlay" onclick="toggleMenu()"></div>
     </div>
@@ -72,38 +72,19 @@
         <div class="banner__background">
             <img src="../asset/imgs/banners/bg1.jpg" alt="Banner Background" />
         </div>
-    
+
         <div class="banner__content">
-            <!-- Tiêu đề -->
             <div class="banner__title">
                 <h2>CHỌN VỊ YÊU THÍCH</h2>
             </div>
-    
-            <!-- Danh sách sản phẩm -->
-            <ul class="banner__product-list">
-                <li class="banner__product-item">
-                    <img src="../asset/imgs/products/product1.png" alt="Ổi hồng" />
-                    <div class="banner__product-info">
-                        <h3>ỔI HỒNG</h3>
-                        <p>PINK GUAVA</p>
-                        <span class="price">15.000đ</span>
-                    </div>
-                </li>
-                <li class="banner__product-item">
-                    <img src="../asset/imgs/products/product2.png" alt="Bưởi hồng" />
-                    <div class="banner__product-info">
-                        <h3>BƯỞI HỒNG</h3>
-                        <p>PINK GRAPEFRUIT</p>
-                        <span class="price">15.000đ</span>
-                    </div>
-                </li>
-                <!-- Add more products here -->
+
+            <ul class="banner__product-list" id="productList">
             </ul>
         </div>
     </div>
-      
 
 
+    <script src="../asset/scripts/products.js"></script>
     <script src="../asset/scripts/main.js"></script>
 </body>
 
