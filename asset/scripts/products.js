@@ -54,34 +54,54 @@ function setupResponsivePagination(products) {
 
   function renderPage(page) {
     currentPage = page;
-    list.innerHTML = "";
-    const start = (page - 1) * ITEMS_PER_PAGE;
-    const sliced = products.slice(start, start + ITEMS_PER_PAGE);
-
-    sliced.forEach((product) => {
-      const item = document.createElement("li");
-      item.className = "banner__product-item";
-      item.innerHTML = `
-      <img src="${product.image}" alt="${product.name}" />
-        <div class="banner__product-info">
-          <h3>${product.name}</h3>
-          <p>${product.engName}</p>
-          <span class="price">${product.price}</span>
-          <button class="add-to-cart">Thêm vào giỏ hàng</button>
-        </div>
-      `;
-      list.appendChild(item);
-    });
-
-    pagination.innerHTML = "";
-    for (let i = 1; i <= totalPages; i++) {
-      const btn = document.createElement("button");
-      btn.textContent = i;
-      if (i === page) btn.classList.add("active");
-      btn.onclick = () => renderPage(i);
-      pagination.appendChild(btn);
-    }
+    list.classList.add("fade-out");
+  
+    setTimeout(() => {
+      list.innerHTML = "";
+  
+      const start = (page - 1) * ITEMS_PER_PAGE;
+      const sliced = products.slice(start, start + ITEMS_PER_PAGE);
+  
+      sliced.forEach((product, index) => {
+        const item = document.createElement("li");
+        item.className = "banner__product-item";
+        item.style.animationDelay = `${index * 100}ms`;
+  
+        // ✅ Sửa ở đây: thêm data-* để truyền qua nút
+        item.innerHTML = `
+          <img src="${product.image}" alt="${product.name}" />
+          <div class="banner__product-info">
+            <h3>${product.name}</h3>
+            <p>${product.engName}</p>
+            <span class="price">${product.price}</span>
+            <button class="add-to-cart"
+              data-name="${product.name}"
+              data-price="${product.price}"
+              data-image="${product.image}">Thêm vào giỏ hàng</button>
+          </div>
+        `;
+        list.appendChild(item);
+      });
+  
+      // ✅ GỌI THÊM NÀY SAU KHI render xong
+      if (typeof attachAddToCartEvents === "function") {
+        attachAddToCartEvents();
+      }
+  
+      list.classList.remove("fade-out");
+  
+      pagination.innerHTML = "";
+      for (let i = 1; i <= totalPages; i++) {
+        const btn = document.createElement("button");
+        btn.textContent = i;
+        if (i === page) btn.classList.add("active");
+        btn.onclick = () => renderPage(i);
+        pagination.appendChild(btn);
+      }
+    }, 200);
   }
+  
+  
 
   renderPage(currentPage > totalPages ? 1 : currentPage);
 }

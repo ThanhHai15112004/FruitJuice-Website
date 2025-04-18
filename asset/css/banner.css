@@ -65,6 +65,12 @@
   justify-items: center;
   margin: 0 auto;
   max-width: 100%;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.banner__product-list.fade-out {
+  opacity: 0;
 }
 
 .banner__product-item {
@@ -77,12 +83,22 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
 }
 
 .banner__product-item img {
   width: 100%;
   max-width: 150px;
   transition: transform 0.3s ease;
+}
+
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .banner__product-item:hover img {
@@ -141,10 +157,19 @@
   border-radius: 6px;
   font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   width: 100%;
   max-width: 140px;
   text-align: center;
+}
+
+.add-to-cart:hover {
+  background-color: #d92e80;
+  transform: scale(1.05);
+}
+
+.add-to-cart:active {
+  transform: scale(0.95);
 }
 
 .add-to-cart:hover {

@@ -3,84 +3,36 @@
     "image": "../asset/imgs/products/product1.png",
     "name": "ỔI HỒNG",
     "engName": "PINK GUAVA",
-    "price": "15.000đ"
+    "price": "25.000đ"
   },
   {
     "image": "../asset/imgs/products/product2.png",
     "name": "BƯỞI HỒNG",
     "engName": "PINK GRAPEFRUIT",
-    "price": "15.000đ"
+    "price": "29.000đ"
   },
   {
     "image": "../asset/imgs/products/product3.png",
-    "name": "CAM ĐÀO",
-    "engName": "PEACH PARADISE",
-    "price": "15.000đ"
+    "name": "BIA RỪNG",
+    "engName": "GINGER BEER",
+    "price": "24.000đ"
   },
   {
     "image": "../asset/imgs/products/product4.png",
-    "name": "BƯỞI HỒNG",
-    "engName": "PINK GRAPEFRUIT",
-    "price": "15.000đ"
-  },
-  {
-    "image": "../asset/imgs/products/product5.png",
-    "name": "BƯỞI HỒNG",
-    "engName": "PINK GRAPEFRUIT",
-    "price": "15.000đ"
-  },
-  {
-    "image": "../asset/imgs/products/product3.png",
     "name": "CAM ĐÀO",
     "engName": "PEACH PARADISE",
-    "price": "15.000đ"
-  },
-  {
-    "image": "../asset/imgs/products/product4.png",
-    "name": "BƯỞI HỒNG",
-    "engName": "PINK GRAPEFRUIT",
-    "price": "15.000đ"
+    "price": "31.000đ"
   },
   {
     "image": "../asset/imgs/products/product5.png",
-    "name": "BƯỞI HỒNG",
-    "engName": "PINK GRAPEFRUIT",
-    "price": "15.000đ"
+    "name": "XOÀI KIWI",
+    "engName": "MANGO KIWI",
+    "price": "19.000đ"
   },
   {
-    "image": "../asset/imgs/products/product3.png",
-    "name": "CAM ĐÀO",
-    "engName": "PEACH PARADISE",
-    "price": "15.000đ"
-  },
-  {
-    "image": "../asset/imgs/products/product4.png",
-    "name": "BƯỞI HỒNG",
-    "engName": "PINK GRAPEFRUIT",
-    "price": "15.000đ"
-  },
-  {
-    "image": "../asset/imgs/products/product5.png",
-    "name": "BƯỞI HỒNG",
-    "engName": "PINK GRAPEFRUIT",
-    "price": "15.000đ"
-  },
-  {
-    "image": "../asset/imgs/products/product3.png",
-    "name": "CAM ĐÀO",
-    "engName": "PEACH PARADISE",
-    "price": "15.000đ"
-  },
-  {
-    "image": "../asset/imgs/products/product4.png",
-    "name": "BƯỞI HỒNG",
-    "engName": "PINK GRAPEFRUIT",
-    "price": "15.000đ"
-  },
-  {
-    "image": "../asset/imgs/products/product5.png",
-    "name": "BƯỞI HỒNG",
-    "engName": "PINK GRAPEFRUIT",
-    "price": "15.000đ"
+    "image": "../asset/imgs/products/product6.png",
+    "name": "CAM YUZU",
+    "engName": "YUZU ORANGE",
+    "price": "35.000đ"
   }
 ]

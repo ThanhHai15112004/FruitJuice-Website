@@ -43,7 +43,12 @@
     width: 100%;
     border-top: 6px solid var(--color-accent);
     padding: var(--padding-header-vertical) 0;
-}
+  
+    position: sticky; 
+    top: 0;          
+    z-index: 10000; 
+  }
+  
 
 .header_container {
     margin: 0 120px;
@@ -436,9 +441,9 @@
         color: var(--color-accent);
     }
 
-    .header__icon span {
+    .header__icon span:not(.cart-badge) {
         display: none;
-    }
+      }
 
     .header__hotline {
         display: none;
