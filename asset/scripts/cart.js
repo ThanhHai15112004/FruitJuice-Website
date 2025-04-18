@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
     cartToggleBtn.addEventListener("click", (e) => {
       e.preventDefault();
       cartSidebar.classList.add("open");
-      body.classList.add("no-scroll");
+      document.getElementById("headerOverlay").classList.add("show");
     });
 
     closeCartBtn.addEventListener("click", () => {
       cartSidebar.classList.remove("open");
-      body.classList.remove("no-scroll");
+      document.getElementById("headerOverlay").classList.remove("show");
     });
 
     document.addEventListener("click", (e) => {

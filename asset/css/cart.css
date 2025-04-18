@@ -21,10 +21,10 @@
     min-width: 20px;
     text-align: center;
     transition: transform 0.3s ease;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  }
-  
-  .quantity-btn {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.quantity-btn {
     background-color: #ff4fa6;
     border: none;
     color: white;
@@ -35,13 +35,13 @@
     margin: 0 4px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .quantity-btn:hover {
+}
+
+.quantity-btn:hover {
     background-color: #e03e91;
     transform: scale(1.1);
-  }
-  
+}
+
 
 .cart-sidebar {
     position: fixed;
@@ -53,13 +53,19 @@
     background-color: #fff;
     z-index: 9999;
     box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
-    transition: right 0.3s ease;
     display: flex;
     flex-direction: column;
+
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
+
 
 .cart-sidebar.open {
     right: 0;
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .cart-sidebar__header {
@@ -184,16 +190,24 @@
     background-color: #ffd6e2;
 }
 
-@keyframes cartPulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); background-color: #d92e80; }
-    100% { transform: scale(1); }
-  }
-  
-  .cart-badge.animated {
-    animation: cartPulse 0.5s ease;
-  }
-  
+.cart-badge.animated {
+    animation: popScale 0.4s ease-in-out;
+}
+
+@keyframes popScale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4);
+        background-color: #ff3e9e;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 @media (max-width: 480px) {
     .cart-sidebar {

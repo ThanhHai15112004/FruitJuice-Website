@@ -105,3 +105,39 @@ function setupResponsivePagination(products) {
 
   renderPage(currentPage > totalPages ? 1 : currentPage);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const dots = document.querySelectorAll('.dot');
+const slides = document.querySelectorAll('.product-card');
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        slides.forEach((slide, slideIndex) => {
+            slide.style.transform = `translateX(-${index * 100}%)`;
+        });
+
+        dots.forEach(dot => dot.classList.remove('active'));
+        dot.classList.add('active');
+    });
+});

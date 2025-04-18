@@ -43,12 +43,13 @@
     width: 100%;
     border-top: 6px solid var(--color-accent);
     padding: var(--padding-header-vertical) 0;
-  
-    position: sticky; 
-    top: 0;          
-    z-index: 10000; 
-  }
-  
+
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+}
+
 
 .header_container {
     margin: 0 120px;
@@ -443,7 +444,7 @@
 
     .header__icon span:not(.cart-badge) {
         display: none;
-      }
+    }
 
     .header__hotline {
         display: none;
@@ -530,7 +531,6 @@
     }
 }
 
-
 .header__overlay {
     position: fixed;
     top: 0;
@@ -539,20 +539,24 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 9990;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
 }
 
+
 .header__overlay.show {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 
 @media (min-width: 850px) and (max-width: 1100px) {
     .hide-on-medium {
-      display: none !important;
+        display: none !important;
     }
-    .header__nav-list{
+
+    .header__nav-list {
         gap: 40px;
     }
-  }
-  
+}

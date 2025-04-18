@@ -1,0 +1,215 @@
+.intro-slider {
+    position: relative;
+    background: url('https://drinkmamapop.com/wp-content/uploads/2024/06/Mamapop_bg2-scaled.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.intro-slider-track {
+    display: flex;
+    width: 200%;
+    /* Cho 2 slide, có thể tăng nếu có nhiều slide hơn */
+    transition: transform 0.5s ease-in-out;
+}
+
+.intro-slide {
+    width: 100vw;
+    max-width: 1200px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+
+.intro-image {
+    flex: 1;
+    text-align: center;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 480px;
+    transition: transform 0.4s ease;
+    transform: translateX(48px) translateY(-21px);
+}
+
+.intro-image img:hover {
+    transform: scale(1.05);
+}
+
+.intro-text {
+    flex: 1;
+    padding-left: 32px;
+}
+
+.intro-text h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #0d1b4c;
+    margin-bottom: 16px;
+}
+
+.intro-text p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Navigation buttons */
+.intro-slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.intro-slider-nav button {
+    background: rgba(255, 255, 255, 0.8);
+    color: #d12e61;
+    font-size: 26px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.intro-slider-nav button:hover {
+    background: #ffd6e2;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .intro-slide {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-image {
+        display: none;
+    }
+
+    .intro-text {
+        padding-left: 0;
+        margin: 0 14px;
+    }
+
+    .intro-text h2 {
+        font-size: 26px;
+    }
+
+    .intro-slider-track {
+        width: 100vw;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    .intro-image img {
+        max-width: 320px;
+    }
+
+    .intro-text {
+        margin: 0 24px;
+    }
+}
+
+
+
+
+
+.certification-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.certification-section h2 {
+    font-size: 30px;
+    color: #0d1b4c;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.certification-section p {
+    font-size: 20px;
+    color: #0d1b4c;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 700;
+    padding: 20px 40px;
+}
+
+.certification-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.certification-logo {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+.certification-logo:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+    .certification-section {
+        padding: 20px 15px;
+    }
+
+    .certification-logo {
+        width: 40px;
+    }
+
+    .certification-section h2 {
+        font-size: 20px;
+    }
+
+    .certification-section p {
+        font-size: 15px;
+        font-weight: bold;
+        max-width: 100%;
+        padding: 15px 0;
+    }
+
+    .certification-logos {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .certification-logo {
+        width: 32px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .certification-logos {
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .certification-logo {
+        width: 80px;
+    }
+
+    .certification-section p {
+        font-size: 20px;
+    }
+}
