@@ -3,14 +3,28 @@
     width: 100%;
     margin: auto;
     overflow: hidden;
+    touch-action: pan-y; /* Improve touch handling */
 }
 
 .slider__wrapper {
     display: flex;
     transition: transform 0.4s ease-in-out;
+    width: 200%; /* Will be set by JS to slides.length * 100% */
+    cursor: grab;
 }
 
 .slider__image {
-    width: 100%;
+    width: 50%; /* Will be set by JS to 100 / slides.length % */
     flex-shrink: 0;
+    object-fit: cover; /* Ensures images cover their container properly */
+    height: auto;
+    display: block; /* Remove any default spacing */
+}
+
+/* Add visual cue that slider is draggable */
+.slider:hover .slider__wrapper {
+    cursor: grab;
+}
+.slider .slider__wrapper:active {
+    cursor: grabbing;
 }
