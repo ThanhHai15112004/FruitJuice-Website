@@ -377,14 +377,17 @@
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) { 
+    .header_container{
+        margin: 0 12px;
+    }
     .header__secondary-navigation {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: nowrap;
       gap: 8px;
-      padding: 8px 12px;
+      padding: 8px 0;
       margin: 0;
     }
   
@@ -438,7 +441,7 @@
     }
   
     .header__secondary-navigation__center {
-      flex: 1; /* cho chiếm phần còn lại */
+      flex: 1;
       display: flex;
       justify-content: flex-end;
       order: 3;
@@ -459,7 +462,7 @@
         padding: 10px 48px 10px 16px;
         border: 1px solid var(--color-accent);
         border-radius: var(--radius-full);
-        font-size: 16px; /* to hơn */
+        font-size: 16px; 
         background-color: var(--color-background);
         width: 100%;
       }
@@ -480,10 +483,9 @@
         cursor: pointer;
       }
     
-      /* Optional: icon và thanh navigation */
       .header__secondary-navigation {
         gap: 16px;
-        padding: 8px 12px;
+        padding: 8px 2px;
       }
     
       .header__icons i {
