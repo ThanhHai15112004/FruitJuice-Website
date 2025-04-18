@@ -24,7 +24,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 50px;
 }
 
 /* ========== TIÊU ĐỀ ========== */
@@ -206,13 +205,40 @@
       }
     
       .banner__product-item img {
-        max-width: 150px;
+        max-width: 100px;
       }
     
       .banner__product-list {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
       }
+}
+
+@media (max-width: 420px) {
+  .banner__title h2 {
+      font-size: 24px;
+    }
+  
+    .banner__product-info h3 {
+      font-size: 18px;
+    }
+  
+    .banner__product-info p {
+      font-size: 14px;
+    }
+  
+    .banner__product-info .price {
+      font-size: 18px;
+    }
+  
+    .banner__product-item img {
+      max-width: 80px;
+    }
+  
+    .banner__product-list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
 }
 
 /* ========== PAGINATION ========== */
