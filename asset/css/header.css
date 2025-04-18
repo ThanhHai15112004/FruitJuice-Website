@@ -205,7 +205,7 @@
 
 
 /* ========== 1000px: giảm kích thước logo, nút, search bar ========== */
-@media (max-width: 1199px) {
+@media (max-width: 1229px) {
     :root {
         --logo-max-height: 60px;
         --search-max-width: 360px;
@@ -247,26 +247,33 @@
         font-weight: 550;
     }
 }
+
 @media (max-width: 1109px) {
     .nav-hidden {
-      display: none;
+        display: none;
     }
-  
+
     .header__main-navigation.show .nav-hidden {
-      display: list-item;
+        display: list-item;
     }
-  }
+}
 
 @media (max-width: 1000px) {
     .nav-hidden {
-      display: none;
+        display: none;
     }
-  
+
     .header__main-navigation.show .nav-hidden {
-      display: list-item;
+        display: list-item;
     }
-  }
-  
+}
+
+
+/* Hide menu toggle by default */
+.header__menu-toggle,
+.header__menu-close {
+    display: none;
+}
 
 /* ========== 850px ========== */
 @media (max-width: 850px) {
@@ -350,10 +357,10 @@
     }
 
     .header__menu-toggle {
-        display: none;
+        display: block;
+        font-size: 22px;
         background: none;
         border: none;
-        font-size: 26px;
         color: var(--color-accent);
         cursor: pointer;
     }
@@ -362,91 +369,88 @@
         display: block;
         position: absolute;
         top: 16px;
-        right: 20px;
+        right: 16px;
         font-size: 24px;
         background: none;
         border: none;
-        cursor: pointer;
         color: var(--color-accent);
+        cursor: pointer;
+        z-index: 10000;
     }
 }
 
-/* Hide menu toggle by default */
-.header__menu-toggle,
-.header__menu-close {
-    display: none;
-}
 
-@media (max-width: 600px) { 
-    .header_container{
+@media (max-width: 600px) {
+    .header_container {
         margin: 0 12px;
     }
+
     .header__secondary-navigation {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: nowrap;
-      gap: 8px;
-      padding: 8px 0;
-      margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 8px;
+        padding: 8px 0;
+        margin: 0;
     }
-  
+
     .header__secondary-navigation__left {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 0;
     }
-  
+
     .header__logo {
-      display: none;
+        display: none;
     }
-  
+
     .header__menu-toggle {
-      display: block;
-      font-size: 22px;
-      background: none;
-      border: none;
-      color: var(--color-accent);
-      cursor: pointer;
+        display: block;
+        font-size: 22px;
+        background: none;
+        border: none;
+        color: var(--color-accent);
+        cursor: pointer;
     }
-  
+
     .header__secondary-navigation__right {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
     }
-  
+
     .header__icons {
-      display: flex;
-      gap: 10px;
+        display: flex;
+        gap: 10px;
     }
-  
+
     .header__icon {
-      font-size: 0;
+        font-size: 0;
     }
-  
+
     .header__icon i {
-      font-size: 18px;
-      color: var(--color-accent);
+        font-size: 18px;
+        color: var(--color-accent);
     }
-  
+
     .header__icon span {
-      display: none;
+        display: none;
     }
-  
+
     .header__hotline {
-      display: none;
+        display: none;
     }
-  
+
     .header__secondary-navigation__center {
-      flex: 1;
-      display: flex;
-      justify-content: flex-end;
-      order: 3;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        order: 3;
     }
-  
+
     .header__search-bar {
         display: flex;
         align-items: center;
@@ -455,19 +459,19 @@
         margin-left: 12px;
         margin-right: 12px;
         position: relative;
-      }
-  
-      .header__search-input {
+    }
+
+    .header__search-input {
         flex: 1;
         padding: 10px 48px 10px 16px;
         border: 1px solid var(--color-accent);
         border-radius: var(--radius-full);
-        font-size: 16px; 
+        font-size: 16px;
         background-color: var(--color-background);
         width: 100%;
-      }
-  
-      .header__search-button {
+    }
+
+    .header__search-button {
         position: absolute;
         right: 8px;
         width: 36px;
@@ -481,15 +485,53 @@
         justify-content: center;
         font-size: 16px;
         cursor: pointer;
-      }
-    
-      .header__secondary-navigation {
+    }
+
+    .header__secondary-navigation {
         gap: 16px;
         padding: 8px 2px;
-      }
-    
-      .header__icons i {
+    }
+
+    .header__icons i {
         font-size: 20px;
-      }
-  }
-  
+    }
+}
+
+
+
+/* Nút đóng off-canvas menu */
+.header__menu-close {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: var(--color-accent);
+    cursor: pointer;
+    z-index: 10000;
+}
+
+/* Chỉ hiện nút khi menu mở */
+@media (max-width: 850px) {
+    .header__menu-close {
+        display: block;
+    }
+}
+
+
+.header__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9990;
+    display: none;
+}
+
+.header__overlay.show {
+    display: block;
+}
