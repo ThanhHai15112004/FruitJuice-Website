@@ -499,18 +499,23 @@
 
 
 
-/* Nút đóng off-canvas menu */
+/* Mặc định ẩn nút close */
 .header__menu-close {
-    display: block;
+    display: none;
     position: absolute;
     top: 16px;
-    right: 16px;
+    right: 20px;
     font-size: 24px;
     background: none;
     border: none;
-    color: var(--color-accent);
     cursor: pointer;
-    z-index: 10000;
+    color: var(--color-accent);
+    z-index: 10001;
+}
+
+/* Chỉ hiển thị nút close khi nav đang được mở */
+.header__main-navigation.show .header__menu-close {
+    display: block;
 }
 
 /* Chỉ hiện nút khi menu mở */
@@ -535,3 +540,14 @@
 .header__overlay.show {
     display: block;
 }
+
+
+@media (min-width: 850px) and (max-width: 1100px) {
+    .hide-on-medium {
+      display: none !important;
+    }
+    .header__nav-list{
+        gap: 40px;
+    }
+  }
+  
