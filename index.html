@@ -7,10 +7,12 @@
     <title>TLU MamaPop - Nước ép tốt nhất Việt Nam</title>
     <link rel="stylesheet" href="../asset/css/header.css" />
     <link rel="stylesheet" href="../asset/css/banner.css" />
+    <link rel="stylesheet" href="../asset/css/slider.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
+    <!-- Header -->
     <div class="header">
         <div class="header_container">
             <!-- Secondary Navigation -->
@@ -62,13 +64,22 @@
                     <li class="header__nav-item hide-on-medium"><a href="../index.html">HỆ THỐNG CỬA HÀNG</a></li>
                     <li class="header__nav-item"><a href="../index.html">LIÊN HỆ</a></li>
                 </ul>
-                
+
             </div>
 
         </div>
         <div class="header__overlay" id="headerOverlay" onclick="toggleMenu()"></div>
     </div>
 
+    <!-- slider -->
+    <div class="slider">
+        <div class="slider__wrapper" id="sliderWrapper">
+            <img src="../asset/imgs/slider/slider1.jpg" class="slider__image" />
+            <img src="../asset/imgs/slider/slider2.jpg" class="slider__image" />
+        </div>
+    </div>
+
+    <!-- products selection -->
     <div class="banner">
         <div class="banner__background">
             <img src="../asset/imgs/banners/bg1.jpg" alt="Banner Background" />
@@ -81,14 +92,16 @@
 
             <ul class="banner__product-list" id="productList"></ul>
             <div class="product-pagination" id="pagination"></div>
+            
         </div>
-        
+
 
     </div>
 
 
     <script src="../asset/scripts/products.js"></script>
     <script src="../asset/scripts/main.js"></script>
+    <script src="../asset/scripts/slider.js"></script>
 </body>
 
 </html>

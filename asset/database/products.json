@@ -1,86 +1,86 @@
 [
-    {
-        "image": "../asset/imgs/products/product1.png",
-        "name": "ỔI HỒNG",
-        "engName": "PINK GUAVA",
-        "price": "15.000đ"
-    },
-    {
-        "image": "../asset/imgs/products/product2.png",
-        "name": "BƯỞI HỒNG",
-        "engName": "PINK GRAPEFRUIT",
-        "price": "15.000đ"
-    },
-    {
-        "image": "../asset/imgs/products/product3.png",
-        "name": "CAM ĐÀO",
-        "engName": "PEACH PARADISE",
-        "price": "15.000đ"
-    },
-    {
-        "image": "../asset/imgs/products/product4.png",
-        "name": "BƯỞI HỒNG",
-        "engName": "PINK GRAPEFRUIT",
-        "price": "15.000đ"
-    },
-    {
-        "image": "../asset/imgs/products/product5.png",
-        "name": "BƯỞI HỒNG",
-        "engName": "PINK GRAPEFRUIT",
-        "price": "15.000đ"
-    },
-    {
-        "image": "../asset/imgs/products/product3.png",
-        "name": "CAM ĐÀO",
-        "engName": "PEACH PARADISE",
-        "price": "15.000đ"
-    },
-    {
-        "image": "../asset/imgs/products/product4.png",
-        "name": "BƯỞI HỒNG",
-        "engName": "PINK GRAPEFRUIT",
-        "price": "15.000đ"
-    },
-    {
-        "image": "../asset/imgs/products/product5.png",
-        "name": "BƯỞI HỒNG",
-        "engName": "PINK GRAPEFRUIT",
-        "price": "15.000đ"
-    },
-    {
-        "image": "../asset/imgs/products/product3.png",
-        "name": "CAM ĐÀO",
-        "engName": "PEACH PARADISE",
-        "price": "15.000đ"
-    },
-    {
-        "image": "../asset/imgs/products/product4.png",
-        "name": "BƯỞI HỒNG",
-        "engName": "PINK GRAPEFRUIT",
-        "price": "15.000đ"
-    },
-    {
-        "image": "../asset/imgs/products/product5.png",
-        "name": "BƯỞI HỒNG",
-        "engName": "PINK GRAPEFRUIT",
-        "price": "15.000đ"
-    },
-    {
-        "image": "../asset/imgs/products/product3.png",
-        "name": "CAM ĐÀO",
-        "engName": "PEACH PARADISE",
-        "price": "15.000đ"
-    },
-    {
-        "image": "../asset/imgs/products/product4.png",
-        "name": "BƯỞI HỒNG",
-        "engName": "PINK GRAPEFRUIT",
-        "price": "15.000đ"
-    },
-    {
-        "image": "../asset/imgs/products/product5.png",
-        "name": "BƯỞI HỒNG",
-        "engName": "PINK GRAPEFRUIT",
-        "price": "15.000đ"
-    }
+  {
+    "image": "../asset/imgs/products/product1.png",
+    "name": "ỔI HỒNG",
+    "engName": "PINK GUAVA",
+    "price": "15.000đ"
+  },
+  {
+    "image": "../asset/imgs/products/product2.png",
+    "name": "BƯỞI HỒNG",
+    "engName": "PINK GRAPEFRUIT",
+    "price": "15.000đ"
+  },
+  {
+    "image": "../asset/imgs/products/product3.png",
+    "name": "CAM ĐÀO",
+    "engName": "PEACH PARADISE",
+    "price": "15.000đ"
+  },
+  {
+    "image": "../asset/imgs/products/product4.png",
+    "name": "BƯỞI HỒNG",
+    "engName": "PINK GRAPEFRUIT",
+    "price": "15.000đ"
+  },
+  {
+    "image": "../asset/imgs/products/product5.png",
+    "name": "BƯỞI HỒNG",
+    "engName": "PINK GRAPEFRUIT",
+    "price": "15.000đ"
+  },
+  {
+    "image": "../asset/imgs/products/product3.png",
+    "name": "CAM ĐÀO",
+    "engName": "PEACH PARADISE",
+    "price": "15.000đ"
+  },
+  {
+    "image": "../asset/imgs/products/product4.png",
+    "name": "BƯỞI HỒNG",
+    "engName": "PINK GRAPEFRUIT",
+    "price": "15.000đ"
+  },
+  {
+    "image": "../asset/imgs/products/product5.png",
+    "name": "BƯỞI HỒNG",
+    "engName": "PINK GRAPEFRUIT",
+    "price": "15.000đ"
+  },
+  {
+    "image": "../asset/imgs/products/product3.png",
+    "name": "CAM ĐÀO",
+    "engName": "PEACH PARADISE",
+    "price": "15.000đ"
+  },
+  {
+    "image": "../asset/imgs/products/product4.png",
+    "name": "BƯỞI HỒNG",
+    "engName": "PINK GRAPEFRUIT",
+    "price": "15.000đ"
+  },
+  {
+    "image": "../asset/imgs/products/product5.png",
+    "name": "BƯỞI HỒNG",
+    "engName": "PINK GRAPEFRUIT",
+    "price": "15.000đ"
+  },
+  {
+    "image": "../asset/imgs/products/product3.png",
+    "name": "CAM ĐÀO",
+    "engName": "PEACH PARADISE",
+    "price": "15.000đ"
+  },
+  {
+    "image": "../asset/imgs/products/product4.png",
+    "name": "BƯỞI HỒNG",
+    "engName": "PINK GRAPEFRUIT",
+    "price": "15.000đ"
+  },
+  {
+    "image": "../asset/imgs/products/product5.png",
+    "name": "BƯỞI HỒNG",
+    "engName": "PINK GRAPEFRUIT",
+    "price": "15.000đ"
+  }
 ]

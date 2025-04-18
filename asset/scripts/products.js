@@ -24,19 +24,15 @@ function renderProducts(products) {
   });
 }
 
-
-
-
-
 // phan trang
 document.addEventListener("DOMContentLoaded", () => {
   fetch("../asset/database/products.json")
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       setupResponsivePagination(data);
       window.addEventListener("resize", () => setupResponsivePagination(data));
     })
-    .catch(error => console.error("Lỗi khi load JSON:", error));
+    .catch((error) => console.error("Lỗi khi load JSON:", error));
 });
 
 let currentPage = 1;
@@ -62,7 +58,7 @@ function setupResponsivePagination(products) {
     const start = (page - 1) * ITEMS_PER_PAGE;
     const sliced = products.slice(start, start + ITEMS_PER_PAGE);
 
-    sliced.forEach(product => {
+    sliced.forEach((product) => {
       const item = document.createElement("li");
       item.className = "banner__product-item";
       item.innerHTML = `
