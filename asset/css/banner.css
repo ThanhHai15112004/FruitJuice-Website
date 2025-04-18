@@ -62,7 +62,13 @@
     transition: transform 0.3s ease;
     cursor: pointer;
     width: 100%;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
 
 
 .banner__product-item img {
@@ -106,7 +112,7 @@
 @media (max-width: 1200px) {
     .banner__product-list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 40px;
         justify-items: center;
         padding: 20px;
@@ -123,7 +129,7 @@
 
 
 
-@media (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 800px) {
     .banner__title h2 {
         font-size: 28px;
       }
@@ -145,7 +151,7 @@
       }
     
       .banner__product-list {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         gap: 30px;
       }
 }
